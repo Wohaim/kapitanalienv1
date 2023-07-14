@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <!--Meta-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Alien, Kapitan Alien, alien ,kapitan alien, alien z yt , alien z youtube, kapitan alien fb, kapitan alien facebook, kapitan alien yt">
+    <!--Title-->
+    <title>Kapitan Alien</title>
+    <!--link-->  
+    <link rel="shortcut icon" href="/image/icon.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <main class="main" style="display: block;">
+        <header class="header" id="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">
+                    <img src="/image/icon.jpg"  width="80px" style="border-radius: 50%;" alt="">
+                </a>
+                <ul class="nav-menu">
+                    <li class ="nav-link">
+                        <a href="https://www.facebook.com/KapitanAlien">Streamy</a>
+                    </li>
+                    <li class ="nav-link">
+                        <a href="#pytania">Częste pytania</a>
+                    </li>
+                    <li class ="nav-link">
+                        <a href="#inne">Inne</a>
+                    </li>
+                    
+                </ul>
+                <a href="https://discord.com/invite/ruV9YHj" class="nav-discord">
+                    <img src="image/discord.svg" >
+                </a>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+            <div class="header-container">
+                <div class="container_header">
+                    <div class="container_header-logo">
+                        <img src="image/icon.jpg">
+                    </div>
+                    <div class="container_header-content">
+                        <h1 class="animate-text">
+                            Kapitan Alien
+                        </h1>
+                        <p class="containter_header-text">
+                            Cześć, jestem Alien! Prowadzę chillowe
+                        </p>
+                        <p class="containter_header-text"> 
+                            streamy głównie z gier typu FPS, lubię też
+                        </p> 
+                        <p class="containter_header-text">
+                            jednak Survivale
+                        </p>
+                        <a href="https://www.facebook.com/KapitanAlien">
+                            <button class="btn">Obserwuj!</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class=" stream">
+            <!-- Add a placeholder for the Twitch embed -->
+            <div id="twitch-embed"></div>
+
+            <!-- Load the Twitch embed script -->
+            <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+            <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element. -->
+            <script type="text/javascript">
+            var embed = new Twitch.Embed("twitch-embed", {
+                width: 854,
+                height: 480,
+                channel: "Kapitanalien",
+                layout: "video",
+                autoplay: false,
+                // Only needed if this page is going to be embedded on other websites
+                parent: ["embed.example.com", "othersite.example.com"]
+            });
+
+            embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+                var player = embed.getPlayer();
+                player.play();
+            });
+            </script>
+        </section>
+        <section id="pytania">
+            <h2 class="pytania-text">
+                Częste pytania
+            </h2>
+            <div class="container-pytania">
+                <div class="container-pytania-content">
+                    <h2>Komputer Gamingowy</h2>
+                    <ul>
+                        <li>
+                            PŁYTA GŁÓWNA: MSI MPG Z390 GAMING EDGE AC
+                        </li>
+                        <li>
+                            PROCESOR: Intel Core i7-9700K - podkręcony do 5Ghz
+                        </li>
+                        <li>
+                            KARTA GRAFICZNA: MSI GeForce RTX 2070 GAMING 8G
+                        </li>
+                        <li>
+                            RAM: Kingston HyperX KHX3600C17D4 /2x16GB 3600Mhz
+                        </li>
+                    </ul>
+                </div>
+                <img class="container-pytania-image" src="image/komputer.jpg" width="750px">
+            </div>
+        <div class="container-pytania">
+            <div class="container-pytania-content">
+                <h2>Komputer Streamingowy</h2>
+                <ul>
+                    <li>
+                        PŁYTA GŁÓWNA: MSI Z97 Gaming 5
+                    </li>
+                    <li>
+                        PROCESOR: Intel Core i7-4790k
+                    </li>
+                    <li>
+                        KARTA GRAFICZNA: GTX 1080 AMP! Edition
+                    </li>
+                    <li>
+                        RAM: 16GB GEiL 1866 MHz
+                    </li>
+                </ul>
+            </div>
+            <img class="container-pytania-image" src="image/komputer-streaming.png" width="750px">
+        </div>
+        <div class="container-pytania">
+            <div class="container-pytania-content">
+                <h2>Monitory</h2>
+                <ul>
+                    <li>
+                        1.Monitor BenQ ZOWIE XL2411 144Hz
+                    </li>
+                    <li>
+                        2.Samsung C32HG70x 144Hz
+                    </li>
+                    <li>
+                        3.Monitor BENQ GL2460 60Hz
+                    </li>
+                </ul>
+            </div>
+            <img class="container-pytania-image" src="image/monitor.jpg">
+        </div>
+        <div class="container-pytania">
+            <div class="container-pytania-content">
+                <h2>Czy będzie?</h2>
+                <ul>
+                    <li>
+                        Czy będzie garry's mod? - Nie
+                    </li>
+                    <li>
+                        Czy będzie fifa? - Jak EA w końcu wypuści coś, co nie jest upośledzone (czyli nigdy)
+                    </li>
+                    <li>
+                        Czy będzie Fortnite? - Nie
+                    </li>
+                    <li>
+                        Czy będzie Who's your daddy? - Nie
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-pytania">
+            <div class="container-pytania-content">
+                <h2>Dodatkowe</h2>
+                <ul>
+                    <li>
+                        KLAWIATURA: Womier K87 / Razer BlackWidow Chroma
+                    </li>
+                    <li>
+                        MYSZ: Razer Viper Ultimate (Cyberpunk edyszyn)
+                    </li>
+                    <li>
+                        PODKŁADKA: Genesis - największa
+                    </li>
+                    <li>
+                        MIKROFON: Shure SM7B
+                    </li>
+                    <li>
+                        SŁUCHAWKI: Audio-technica ATH-A550Z
+                    </li>
+                    <li>
+                        MIKSER: Yamaha MG10XU
+                    </li>
+                    <li>
+                        PRZEDWZMACNIACZ: DBX 286s
+                    </li>
+                    <li>
+                        KAMERKA: Canon EOS 70D
+                    </li>
+                    <li>
+                        INTERNET: Światłowód 100/100
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </section>
+
+        <section id="inne">
+            <div class="container-inne">
+                <div class="container-inne-content">
+                    <h2>Inne</h2>
+                        <p> 
+                        Do końca roku, nabywając patrona
+                         z tego linku:
+                        <a href="https://facebook.com/becomesupporter/KapitanAlien/">
+                            Kup Patrona
+                        </a>
+                        </p>
+                        <p> 
+                        CAŁY dochód trafia do mnie! Z góry dziękuję
+                            ślicznie za wsparcie! ❤
+                        </p>
+                        <p>
+                        Twoja wiadomosc na ekranie: 
+                        <a href="https://fb.com/star">
+                            Gwiazdki   
+                        </a>
+                        </p>
+                        <p>
+                        Mój dziwny insta:
+                        <a href="https://www.instagram.com/k.watrobka">
+                            Instagram
+                        </a>
+                        </p>
+                        <p>
+                        Regulamin czatu:
+                        <ol>
+                        <li> Nie bądź debilem </li>
+                        <li>Nie używaj rasistowskich lub homofobicznych</li>
+                        </ol> 
+                        zwrotów/żartów.
+                        Miłej zabawy
+                        </p>
+                        <p>
+                            Discord: 
+                            
+                        </p>
+                        <img src="image/discord.svg" width="50%">
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <p>
+                Created by &copy; Wohaim | Copyright @2021
+            </p>
+        </footer>
+    </main>
+    <script src="app.js"></script>
+
+</body>
+</html>
